@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Create from '../pages/Create';
+import Edit from '../pages/Edit';
 import Index from '../pages/Index';
 import Landing from '../pages/Landing';
 
@@ -9,6 +10,7 @@ const Main = (props) => {
     const [recipes, setRecipes] = useState(null);
 
     const URL = process.env.REACT_APP_BACKEND_URL
+    
   
     const getRecipes = async () => {
       const response = await fetch(URL)
@@ -26,6 +28,18 @@ const Main = (props) => {
       });
       getRecipes();
     };
+    
+    const updateRecipe = async (recipe, id) => {
+      await fetch(URL + id, {
+          method: 'PUT',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(recipe),
+      });
+      //update list of funds
+      getRecipes();
+  };
 
     useEffect(()=> {
       getRecipes()
@@ -37,6 +51,7 @@ const Main = (props) => {
           <Route path='/' element={<Landing/>}/>
           <Route path="/reciplease" element={<Index recipes={recipes} />}/>
           <Route path="/reciplease/create" element={<Create recipes={recipes} createRecipe={createRecipe}/>}/>
+          <Route path="/reciplease/edit/:id" element={recipes && (<Edit recipes={recipes} updateRecipe={updateRecipe}/>)}/>
         </Routes>
       </main>
     );

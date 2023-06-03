@@ -3,6 +3,7 @@ import './App.css';
 import { useEffect, useState } from 'react';
 
 import Main from './components/Main';
+import Header from './components/Header'
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
 
   return (
     <div className="App">
-        <Main recipes={recipes}/>
+        <Header recipes={recipes}/>
+        <Main />
     </div>
   );
 };
