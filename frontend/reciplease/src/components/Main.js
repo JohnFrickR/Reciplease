@@ -38,9 +38,17 @@ const Main = (props) => {
           },
           body: JSON.stringify(recipe),
       });
-      //update list of funds
+      //update list of recipes when we update the recipe
       getRecipes();
   };
+
+    const deleteRecipe = async (id) => {
+      await fetch(URL + id, {
+        method: 'DELETE',
+      });
+      // Update our list of recipes afer we delete a recipe
+      getRecipes();
+    }
 
     useEffect(()=> {
       getRecipes()
@@ -53,7 +61,7 @@ const Main = (props) => {
           <Route path="/reciplease" element={<Index recipes={recipes} />}/>
           <Route path="/reciplease/create" element={<Create recipes={recipes} createRecipe={createRecipe}/>}/>
           <Route path="/reciplease/edit/:id" element={recipes && (<Edit recipes={recipes} updateRecipe={updateRecipe}/>)}/>
-          <Route path="/reciplease/:id" element={recipes && (<Show recipes={recipes} updateRecipe={updateRecipe}/>)}/>
+          <Route path="/reciplease/:id" element={recipes && (<Show recipes={recipes} updateRecipe={updateRecipe} deleteRecipe={deleteRecipe}/>)}/>
         </Routes>
       </main>
     );

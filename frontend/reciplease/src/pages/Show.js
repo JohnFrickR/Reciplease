@@ -13,10 +13,16 @@ const Show = (props) => {
     const editLink = (e) => {
         navigate(`/reciplease/edit/${recipe._id}`)
     }
-    
+    const removeRecipe = (e) =>{
+        e.preventDefault()
+        props.deleteRecipe(recipe._id)
+        navigate("/reciplease")
+    }
+
 return (
     <div className="showContainer">
         <button onClick={editLink}>Edit</button>
+        <button onClick={removeRecipe}>Delete</button>
         <div className="">
             <h1 className="recipeName">{recipe.name}</h1><br/>
             
