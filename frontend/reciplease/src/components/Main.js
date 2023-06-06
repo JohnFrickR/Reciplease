@@ -59,6 +59,7 @@ const Main = (props) => {
         <Routes>
           <Route path='/' element={<Landing/>}/>
           <Route path="/reciplease" element={<Index recipes={recipes} />}/>
+          <Route path="/reciplease/landing" element={<Landing recipes={recipes} />}/>
           <Route path="/reciplease/create" element={<Create recipes={recipes} createRecipe={createRecipe}/>}/>
           <Route path="/reciplease/edit/:id" element={recipes && (<Edit recipes={recipes} updateRecipe={updateRecipe}/>)}/>
           <Route path="/reciplease/:id" element={recipes && (<Show recipes={recipes} updateRecipe={updateRecipe} deleteRecipe={deleteRecipe}/>)}/>
