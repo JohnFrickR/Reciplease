@@ -4,6 +4,7 @@ import Create from '../pages/Create';
 import Edit from '../pages/Edit';
 import Index from '../pages/Index';
 import Landing from '../pages/Landing';
+import Show from '../pages/Show';
 
 const Main = (props) => {
 
@@ -52,6 +53,7 @@ const Main = (props) => {
           <Route path="/reciplease" element={<Index recipes={recipes} />}/>
           <Route path="/reciplease/create" element={<Create recipes={recipes} createRecipe={createRecipe}/>}/>
           <Route path="/reciplease/edit/:id" element={recipes && (<Edit recipes={recipes} updateRecipe={updateRecipe}/>)}/>
+          <Route path="/reciplease/:id" element={recipes && (<Show recipes={recipes} updateRecipe={updateRecipe}/>)}/>
         </Routes>
       </main>
     );
