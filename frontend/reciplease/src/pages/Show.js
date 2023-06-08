@@ -21,8 +21,7 @@ const Show = (props) => {
 
 return (
     <div className="showContainer">
-        <button onClick={editLink}>Edit</button>
-        <button onClick={removeRecipe}>Delete</button>
+       
         <div className="">
             <h1 className="recipeName">{recipe.name}</h1><br/>
             
@@ -42,6 +41,10 @@ return (
         <div className="recipeDirections">
             <article>{recipe.directions}</article>
         </div>
+        <footer>
+        <button onClick={editLink}>Edit</button>
+        <button onClick={removeRecipe}>Delete</button>
+        </footer>
     </div>
 )
     
