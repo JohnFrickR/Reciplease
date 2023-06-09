@@ -5,12 +5,15 @@ const Header = (props) =>{
 
     return(
         <div className="header">
+            <div className="title">
+               <h1>Reciplease</h1> 
+                </div>
             <nav className="navBar">
             <Link to="/reciplease/create">
                 <div>Create</div>
             </Link>
             <Link to="/reciplease/landing">
-                <div>Main</div>
+                <div>Landing/About</div>
             </Link>
             <Link to="/reciplease">
                 <div>Recipes</div>

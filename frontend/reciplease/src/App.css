@@ -1,8 +1,32 @@
+/* Header Styling / NavBar */
+.title{
+  text-align: center;
+  color: rgba(203, 165, 108, 0.844);
+}
+.navBar {
+  font-family: "gotham narrow", Georgia, serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5%;
+  background-color: #abb3bc;
+  opacity: 0.9;
+  font-size: 20px;
+}
+a{
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+}
+a:hover{
+  color: whitesmoke;
+}
 /* index page styling */
 .containerIndex{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
   color: white;
 }
 
