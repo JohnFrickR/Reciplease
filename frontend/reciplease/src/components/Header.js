@@ -9,11 +9,11 @@ const Header = (props) =>{
                <h1>Reciplease</h1> 
                 </div>
             <nav className="navBar">
+                <Link to="/reciplease/landing">
+                <div>About</div> 
+                </Link>
             <Link to="/reciplease/create">
-                <div>Create</div>
-            </Link>
-            <Link to="/reciplease/landing">
-                <div>Landing/About</div>
+                <div>Add Recipe</div>
             </Link>
             <Link to="/reciplease">
                 <div>Recipes</div>

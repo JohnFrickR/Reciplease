@@ -8,10 +8,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: .5%;
-  background-color: #abb3bc;
-  opacity: 0.9;
+  /* background-color: #abb3bc; */
+  opacity: 0.8;
   font-size: 20px;
 }
 a{
@@ -21,6 +21,23 @@ a{
 }
 a:hover{
   color: whitesmoke;
+}
+
+/* Footer Styling */
+.footer{
+  font-family: "gotham narrow", Georgia, serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: .5%;
+  /* background-color: #abb3bc; */
+  opacity: 0.8;
+  font-size: 20px;
+}
+.footer_title{
+  text-align: center;
+  color: rgba(203, 165, 108, 0.844);
 }
 /* index page styling */
 .containerIndex{
@@ -42,10 +59,7 @@ a:hover{
   -webkit-animation: fadeIn 4s;
   animation:fadeIn 4s;
 }
-/* @keyframes fadeIn{
-  0% {opacity: 0}
-  100% {opacity: 1;}
-} */
+
 .landing_img{
   width: 100%;
   height: 80vh;
@@ -56,11 +70,26 @@ a:hover{
   color: white;
   text-shadow: 2px 4px 4px black;
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
 .slogan{
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.editForm{
+  font-family: "gotham narrow",Georgia,serif;
+  margin: auto 0;
+  background-color: rgb(98, 114, 122);
+  margin-top: 30px;
+  transform: translate(150%,0%);
+  text-align: center;
+  max-width: 25vw;
+}
+
+.editlabel{
+  font-size: 1vw;
   font-weight: bold;
 }
