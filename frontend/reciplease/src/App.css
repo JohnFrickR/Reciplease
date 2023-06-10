@@ -93,15 +93,31 @@ a:hover{
   font-style: none;
   color: black;
 }
-/* index page styling */
+
+/* Index page styling */
 .containerIndex{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 10px;
-  color: white;
+  grid-gap: 20px;
+  color: black;
+  /* background-color: bisque; */
 }
+.indexImg{
+  max-width: 50%;
+}     
+.recipe{
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+}
+/* .showDetails{
+  color: black;
+} */
+
+/* Show Page details */
 .showContainer{
   text-align: center;
+  background-color: beige;
 }
 
 /* Landing Page Styling */
