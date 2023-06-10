@@ -12,7 +12,7 @@ const Create = (props) =>{
         description: "",
         rating: "",
         tags: [""],
-        directions: "",
+        directions: [""],
         servings: "",
         img: ""
     })
@@ -33,7 +33,7 @@ const Create = (props) =>{
         description: "",
         rating: "",
         tags: [""],
-        directions: "",
+        directions: [""],
         servings: "",
         img: ""
     });
@@ -46,7 +46,7 @@ const Create = (props) =>{
             <h1 className="createTitle">Add a Recipe!</h1>
                 <form onSubmit={handleSubmit}>
 
-                    <label className="createLabel">Name: </label><br/>
+                    <label className="createLabel createName">Name: </label><br/>
                     <input className="createLabel"
                     type="text"
                     value={Form.name}
@@ -56,8 +56,8 @@ const Create = (props) =>{
                     required
                     /><br/>
 
-                    <label className="createLabel">Ingredients: </label><br/>
-                    <input
+                    <label className="createLabel createName">Ingredients: </label><br/>
+                    <input className="createLabel"
                     type="text"
                     value={Form.ingredients}
                     name="ingredients"
@@ -67,8 +67,8 @@ const Create = (props) =>{
                     required
                     /><br/>
 
-                    <label className="createLabel">Category: </label><br/>
-                    <input
+                    <label className="createLabel createName">Category: </label><br/>
+                    <input className="createLabel"
                     type="text"
                     value={Form.category}
                     name="category"
@@ -78,8 +78,8 @@ const Create = (props) =>{
                     required
                     /><br/>
 
-                    <label className="createLabel">Description: </label><br/>
-                    <input
+                    <label className="createLabel createName">Description: </label><br/>
+                    <input className="createLabel"
                     type="text"
                     value={Form.description}
                     name="description"
@@ -89,8 +89,8 @@ const Create = (props) =>{
                     required
                     /><br/>
 
-                    <label className="createLabel">Rating: </label><br/>
-                    <input
+                    <label className="createLabel createName">Rating: </label><br/>
+                    <input className="createLabel"
                     type="number"
                     value={Form.rating}
                     name="rating"
@@ -100,8 +100,8 @@ const Create = (props) =>{
                     required
                     /><br/>
 
-                    <label className="createLabel">Difficulty: </label><br/>
-                    <select
+                    <label className="createLabel createName">Difficulty: </label><br/>
+                    <select className="createLabel"
                     value={Form.tags}
                     name="tags"
                     onChange={handleChange}
@@ -113,30 +113,30 @@ const Create = (props) =>{
                     <option value="Expert">Expert</option>
                     </select><br/>
 
-                    <label className="createLabel">Directions: </label><br/>
-                    <input
+                    <label className="createLabel createName">Directions: </label><br/>
+                    <input className="createLabel"
                     type="text"
                     value={Form.directions}
                     name="directions"
                     directions="directions"
-                    placeholder="i.e 1. Slice tomatoes, 2. roast tomatoes..."
+                    placeholder="1. Slice tomatoes, 2. roast tomatoes..."
                     onChange={handleChange}
                     required
                     /><br/>
 
-                    <label className="createLabel">Servings: </label><br/>
-                    <input
+                    <label className="createLabel createName">Servings: </label><br/>
+                    <input className="createLabel"
                     type="number"
                     value={Form.servings}
                     name="servings"
                     servings="servings"
-                    placeholder="Enter the amount of servings this makes (i.e 2)"
+                    placeholder="Amount of servings"
                     onChange={handleChange}
                     required
                     /><br/>
 
-                    <label className="createLabel">Image: </label><br/>
-                    <input
+                    <label className="createLabel createName">Image: </label><br/>
+                    <input className="createLabel"
                     type="text"
                     value={Form.img}
                     name="img"
@@ -146,7 +146,7 @@ const Create = (props) =>{
                     required
                     /><br/>
 
-                    <input className="createBtn" type="submit" value="Create Recipe"/>
+                   <input className="createBtn" type="submit" value="Create Recipe"/> 
 
                 </form>
         </div>

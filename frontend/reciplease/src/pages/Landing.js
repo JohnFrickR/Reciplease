@@ -11,6 +11,13 @@ const Landing = (props) =>{
             <div className='landing_slogan'>
                 <h3 className='slogan'>No blogs, no backstory, just recipes!</h3>
             </div>
+            <div>
+                <article>
+                    <p>
+                        I made this in hopes that people can find the recipes they want quickly, or store theirs, without having to read blog after blog. May this make your cooking time shorter, and decisions on what to cook easier.
+                    </p>
+                </article>
+            </div>
         </div>
     );
 };

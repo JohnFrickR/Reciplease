@@ -38,7 +38,7 @@ const Edit = (props) => {
             <h1 className="editTitle">Edit {recipe.name} recipe?</h1>
                 <form onSubmit={handleSubmit}>
 
-                    <label className="editLabel">Name: </label><br/>
+                    <label className="editLabel editName">Name: </label><br/>
                     <input className="editLabel"
                     type="text"
                     value={editForm.name}
@@ -48,8 +48,8 @@ const Edit = (props) => {
                     
                     /><br/>
 
-                    <label className="editLabel">Ingredients: </label><br/>
-                    <input
+                    <label className="editLabel editName">Ingredients: </label><br/>
+                    <input className="editLabel"
                     type="text"
                     value={editForm.ingredients}
                     name="ingredients"
@@ -59,8 +59,8 @@ const Edit = (props) => {
                     
                     /><br/>
 
-                    <label className="editLabel">Category: </label><br/>
-                    <input
+                    <label className="editLabel editName">Category: </label><br/>
+                    <input className="editLabel"
                     type="text"
                     value={editForm.category}
                     name="category"
@@ -70,8 +70,8 @@ const Edit = (props) => {
                     
                     /><br/>
 
-                    <label className="editLabel">Description: </label><br/>
-                    <input
+                    <label className="editLabel editName">Description: </label><br/>
+                    <input className="editLabel"
                     type="text"
                     value={editForm.description}
                     name="description"
@@ -81,8 +81,8 @@ const Edit = (props) => {
                     
                     /><br/>
 
-                    <label className="editLabel">Rating: </label><br/>
-                    <input
+                    <label className="editLabel editName">Rating: </label><br/>
+                    <input className="editLabel"
                     type="number"
                     value={editForm.rating}
                     name="rating"
@@ -92,8 +92,8 @@ const Edit = (props) => {
                     
                     /><br/>
 
-                    <label className="editLabel">Difficulty: </label><br/>
-                    <select
+                    <label className="editLabel editName">Difficulty: </label><br/>
+                    <select className="editLabel"
                     value={editForm.tags}
                     name="tags"
                     onChange={handleChange}
@@ -105,8 +105,8 @@ const Edit = (props) => {
                     <option value="Expert">Expert</option>
                     </select><br/>
 
-                    <label className="editLabel">Directions: </label><br/>
-                    <input
+                    <label className="editLabel editName">Directions: </label><br/>
+                    <input className="editLabel"
                     type="text"
                     value={editForm.directions}
                     name="directions"
@@ -116,8 +116,8 @@ const Edit = (props) => {
                     
                     /><br/>
 
-                    <label className="editLabel">Servings: </label><br/>
-                    <input
+                    <label className="editLabel editName">Servings: </label><br/>
+                    <input className="editLabel"
                     type="number"
                     value={editForm.servings}
                     name="servings"
@@ -127,8 +127,8 @@ const Edit = (props) => {
                     
                     /><br/>
 
-                    <label className="editLabel">Image: </label><br/>
-                    <input
+                    <label className="editLabel editName">Image: </label><br/>
+                    <input className="editLabel"
                     type="text"
                     value={editForm.img}
                     name="img"
