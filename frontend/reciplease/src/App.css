@@ -95,24 +95,40 @@ a:hover{
 }
 
 /* Index page styling */
-.containerIndex{
+.gridContainerIndex{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
+  color: black; 
+}
+.indexLink{
+  background-color: #4b5053;
+  color: #FFFFFF;
+  width: 100px;
+  height: 30px;
+}
+.indexLink:hover {
+  background-color: blanchedalmond;
   color: black;
-  /* background-color: bisque; */
+}
+.indexName{
+  font-size: 40px;
 }
 .indexImg{
-  max-width: 50%;
-}     
+  width: 80%;
+  height: 60%;
+}            
 .recipe{
+  font-family: "Macondo";
+  border: 3px solid black;
+  text-align: center;
   background-color: beige;
-  display: flex;
-  justify-content: center;
 }
-/* .showDetails{
+.indexDetails{
   color: black;
-} */
+  font-size: 30px;
+  padding: 10px;
+}
 
 /* Show Page details */
 .showContainer{
