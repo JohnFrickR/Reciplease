@@ -49,15 +49,23 @@ const Edit = (props) => {
                     /><br/>
 
                     <label className="editLabel editName">Ingredients: </label><br/>
-                    <input className="editLabel"
+                    <textarea 
+                    className="editLabel"
                     type="text"
                     value={editForm.ingredients}
                     name="ingredients"
                     ingredients="ingredients"
                     placeholder="List your ingredients here"
                     onChange={handleChange}
-                    
                     /><br/>
+                    {/* <input className="editLabel"
+                    type="text"
+                    value={editForm.ingredients}
+                    name="ingredients"
+                    ingredients="ingredients"
+                    placeholder="List your ingredients here"
+                    onChange={handleChange}
+                    /> */}
 
                     <label className="editLabel editName">Category: </label><br/>
                     <input className="editLabel"
@@ -71,15 +79,23 @@ const Edit = (props) => {
                     /><br/>
 
                     <label className="editLabel editName">Description: </label><br/>
-                    <input className="editLabel"
+                    <textarea 
+                    className="editLabel"
                     type="text"
                     value={editForm.description}
                     name="description"
                     description="description"
                     placeholder="Brief description of the dish"
                     onChange={handleChange}
-                    
                     /><br/>
+                    {/* <input className="editLabel"
+                    type="text"
+                    value={editForm.description}
+                    name="description"
+                    description="description"
+                    placeholder="Brief description of the dish"
+                    onChange={handleChange}
+                    /> */}
 
                     <label className="editLabel editName">Rating: </label><br/>
                     <input className="editLabel"
@@ -106,15 +122,23 @@ const Edit = (props) => {
                     </select><br/>
 
                     <label className="editLabel editName">Directions: </label><br/>
-                    <input className="editLabel"
+                    <textarea 
+                    className="editLabel"
                     type="text"
                     value={editForm.directions}
                     name="directions"
                     directions="directions"
                     placeholder="i.e 1. Slice tomatoes, 2. roast tomatoes..."
                     onChange={handleChange}
-                    
                     /><br/>
+                    {/* <input className="editLabel"
+                    type="text"
+                    value={editForm.directions}
+                    name="directions"
+                    directions="directions"
+                    placeholder="i.e 1. Slice tomatoes, 2. roast tomatoes..."
+                    onChange={handleChange}
+                    /> */}
 
                     <label className="editLabel editName">Servings: </label><br/>
                     <input className="editLabel"

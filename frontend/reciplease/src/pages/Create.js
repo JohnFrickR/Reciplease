@@ -57,7 +57,8 @@ const Create = (props) =>{
                     /><br/>
 
                     <label className="createLabel createName">Ingredients: </label><br/>
-                    <input className="createLabel"
+                    <textarea 
+                    className="createLabel"
                     type="text"
                     value={Form.ingredients}
                     name="ingredients"
@@ -65,7 +66,16 @@ const Create = (props) =>{
                     placeholder="List your ingredients here"
                     onChange={handleChange}
                     required
-                    /><br/>
+                    /><br/> 
+                    {/* <input className="createLabel"
+                    type="text"
+                    value={Form.ingredients}
+                    name="ingredients"
+                    ingredients="ingredients"
+                    placeholder="List your ingredients here"
+                    onChange={handleChange}
+                    required
+                    />*/}
 
                     <label className="createLabel createName">Category: </label><br/>
                     <input className="createLabel"
@@ -79,7 +89,8 @@ const Create = (props) =>{
                     /><br/>
 
                     <label className="createLabel createName">Description: </label><br/>
-                    <input className="createLabel"
+                    <textarea
+                    className="createLabel"
                     type="text"
                     value={Form.description}
                     name="description"
@@ -88,6 +99,16 @@ const Create = (props) =>{
                     onChange={handleChange}
                     required
                     /><br/>
+                    {/* <input className="createLabel"
+                    type="text"
+                    value={Form.description}
+                    name="description"
+                    description="description"
+                    placeholder="Brief description of the dish"
+                    onChange={handleChange}
+                    required
+                    /> */}
+                    
 
                     <label className="createLabel createName">Rating: </label><br/>
                     <input className="createLabel"
@@ -114,7 +135,8 @@ const Create = (props) =>{
                     </select><br/>
 
                     <label className="createLabel createName">Directions: </label><br/>
-                    <input className="createLabel"
+                    <textarea 
+                    className="createLabel"
                     type="text"
                     value={Form.directions}
                     name="directions"
@@ -122,7 +144,18 @@ const Create = (props) =>{
                     placeholder="1. Slice tomatoes, 2. roast tomatoes..."
                     onChange={handleChange}
                     required
-                    /><br/>
+                    />
+                    {/* My old input form is below in case I want to change how I had it set up */}
+                    {/* <input className="createLabel"
+                    type="text"
+                    value={Form.directions}
+                    name="directions"
+                    directions="directions"
+                    placeholder="1. Slice tomatoes, 2. roast tomatoes..."
+                    onChange={handleChange}
+                    required
+                    /> */}
+                    <br/>
 
                     <label className="createLabel createName">Servings: </label><br/>
                     <input className="createLabel"

@@ -32,6 +32,7 @@ return (
                 <h3>Details</h3>
                 <section>
                 <p>{recipe.category}</p>
+                <p>{recipe.ingredients}</p>
                 <p>{recipe.description}</p>
                 <p>{recipe.rating}</p>
                 <p>{recipe.tags}</p>
