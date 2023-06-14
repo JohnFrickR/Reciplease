@@ -43,9 +43,11 @@ const Create = (props) =>{
   return (
     <section className="createRecipe">
         <div className="createForm">
-            <h1 className="createTitle">Add a Recipe!</h1>
+            
                 <form onSubmit={handleSubmit}>
-
+                
+                <div className="column">
+                    <h1 className="createTitle">Add a Recipe!</h1>
                     <label className="createLabel createName">Name: </label><br/>
                     <input className="createLabel"
                     type="text"
@@ -109,7 +111,7 @@ const Create = (props) =>{
                     required
                     /> */}
                     
-
+                    {/* <div className="column"> */}
                     <label className="createLabel createName">Rating: </label><br/>
                     <input className="createLabel"
                     type="number"
@@ -179,8 +181,11 @@ const Create = (props) =>{
                     required
                     /><br/>
 
-                   <input className="createBtn" type="submit" value="Create Recipe"/> 
+                  <div className="createBtnDiv">
+                  <input className="createBtn" type="submit" value="Create Recipe"/>
+                  </div>
 
+                   </div> 
                 </form>
         </div>
     </section>

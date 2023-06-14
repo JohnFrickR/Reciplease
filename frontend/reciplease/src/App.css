@@ -115,8 +115,10 @@ a:hover{
   font-size: 40px;
 }
 .indexImg{
-  width: 80%;
-  height: 60%;
+  /* width: 80%;
+  height: 60%; */
+  height: 300px;
+  width: 400px;
 }            
 .recipe{
   font-family: "Macondo";
@@ -188,18 +190,33 @@ a:hover{
 }
 
 /* Create Form */
-.createForm{
+
+/* .createForm{
   font-family: "Macondo";
-  margin: auto 0;
-  margin-top: 30px;
+  margin: 100px;
+  display: flex; 
+  flex-direction: column;
   text-align: center;
   background-color: beige;
+  border: 3px solid black;  
+} */
+
+.column{
+  font-family: "Macondo";
+  margin: 100px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  background-color: beige;
+  border: 3px solid black;
 }
+
 .createLabel{
   font-size: 25px;
   font-weight: bold;
   max-width: 100%;
   padding: 10px;
+  text-align: center;
 }
 .createName{
   font-size: 45px;
@@ -214,4 +231,12 @@ a:hover{
 }
 .createBtn{
   font-size: 30px;
+  width: 400px;
+  background-color: black;
+  color: white;
+}
+
+.createBtn:hover{
+  background-color: white;
+  color: black;
 }
