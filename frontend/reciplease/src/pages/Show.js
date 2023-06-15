@@ -13,42 +13,53 @@ const Show = (props) => {
     const editLink = (e) => {
         navigate(`/reciplease/edit/${recipe._id}`)
     }
-    const removeRecipe = (e) =>{
+    const removeRecipe = (e) => {
         e.preventDefault()
         props.deleteRecipe(recipe._id)
         navigate("/reciplease")
     }
 
-return (
-    <div className="showContainer">
-       
-        <div className="">
+    return (
+        <div className="showContainer">
+            <h1 className="recipeName">{recipe.name}</h1>
+            {/* <div className="showNameDiv">
             <h1 className="recipeName">{recipe.name}</h1><br/>
-            
-            <img className="recipeImg" src={`${recipe.img}`} alt="Work Please" />
-            
+        </div> */}
+            <div className="recipeShowDiv">
+
+                <div className="recipeImgDiv">
+                    <img className="recipeImg" src={`${recipe.img}`} alt={`${recipe.name}`} />
+                </div>
+
+                <div className="recipeDetails">
+                    
+                    <div className="recipeDirections">
+                    <article>{recipe.directions}</article>
+                    </div>
+
+                    <section>
+                        <article>
+                            <p>{recipe.category}</p>
+                            <p>{recipe.ingredients}</p>
+                            <p>{recipe.description}</p>
+                            <p>{recipe.rating}</p>
+                            <p>{recipe.tags}</p>
+                            <p>{recipe.servings}</p>
+                        </article>
+                    </section>
+                </div>
+
+                
+                <div className="showButtonsDiv">
+                    <button className="showButtons" onClick={editLink}>Edit</button>
+                    <button  className="showButtons"onClick={removeRecipe}>Delete</button>
+                </div>
+            </div>
+
+
         </div>
-        <div className="recipeDetails">
-                <h3>Details</h3>
-                <section>
-                <p>{recipe.category}</p>
-                <p>{recipe.ingredients}</p>
-                <p>{recipe.description}</p>
-                <p>{recipe.rating}</p>
-                <p>{recipe.tags}</p>
-                <p>{recipe.servings}</p>
-                </section>
-        </div>
-        <div className="recipeDirections">
-            <article>{recipe.directions}</article>
-        </div>
-        <footer>
-        <button onClick={editLink}>Edit</button>
-        <button onClick={removeRecipe}>Delete</button>
-        </footer>
-    </div>
-)
-    
+    )
+
 }
 
 export default Show

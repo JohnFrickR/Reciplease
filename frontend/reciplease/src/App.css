@@ -135,10 +135,40 @@ a:hover{
 
 /* Show Page details */
 .showContainer{
+  font-family: "Macondo";
+  margin: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex; 
+  flex-direction: column;
   text-align: center;
+  border-radius: 10%;
   background-color: beige;
+  border: 3px solid black;
 }
-
+.recipeImg{
+  max-width: 50%;
+  border-radius: 30%;
+}
+.recipeName{
+font-size: 50px;
+color:rgba(203, 165, 108, 0.844);
+text-shadow: 2px 2px 2px black;
+}
+.recipeDetails{
+ font-size: 35px;
+ 
+}
+.showButtons{
+  font-size: 30px;
+  width: 400px;
+  background-color: black;
+  color: white;
+}
+.showButtons:hover{
+  background-color: white;
+  color: black;
+}
 /* Landing Page Styling */
 .landing_div{
   font-family: "Macondo";
@@ -177,9 +207,6 @@ a:hover{
   font-family: "Macondo";
   font-size: 30px;
   background-color: beige;
-}
-.note2{
-
 }
 .myImgDiv{
   margin: auto;
