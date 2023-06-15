@@ -164,18 +164,31 @@ a:hover{
 }
 
 /* Edit Form */
-.editForm{
+
+.columnEdit{
+  font-family: "Macondo";
+  margin: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  background-color: beige;
+  border: 3px solid black;
+}
+/* .editForm{
   font-family: "Macondo";
   margin: auto 0;
   margin-top: 30px;
   text-align: center;
   background-color: beige;
-}
+} */
 .editLabel{
   font-size: 25px;
   font-weight: bold;
   max-width: 100%;
   padding: 10px;
+  text-align: center;
 }
 .editTitle{
   font-size: 50px;
@@ -187,6 +200,16 @@ a:hover{
 }
 .editName{
   font-size: 45px;
+}
+.editBtn{
+  font-size: 30px;
+  width: 400px;
+  background-color: black;
+  color: white;
+}
+.editBtn:hover{
+  background-color: white;
+  color: black;
 }
 
 /* Create Form */
@@ -203,7 +226,9 @@ a:hover{
 
 .column{
   font-family: "Macondo";
-  margin: 100px;
+  margin: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   display: flex; 
   flex-direction: column;
   text-align: center;

@@ -35,9 +35,11 @@ const Edit = (props) => {
 
     return(
         <div className="editForm">
-            <h1 className="editTitle">Edit {recipe.name} recipe?</h1>
-                <form onSubmit={handleSubmit}>
 
+            
+            <form onSubmit={handleSubmit}>
+            <div className="columnEdit">
+            <h1 className="editTitle">Edit {recipe.name} recipe?</h1>
                     <label className="editLabel editName">Name: </label><br/>
                     <input className="editLabel"
                     type="text"
@@ -161,9 +163,12 @@ const Edit = (props) => {
                     onChange={handleChange}
                     
                     /><br/>
-
+                    <div className="editBtnDiv">
                     <input className="editBtn" type="submit" value="Update Recipe"/>
+                    </div>
 
+                    </div>
+                    
                 </form>
                 </div>
                 )
