@@ -49,7 +49,7 @@ const Create = (props) =>{
                 <div className="column">
                     <h1 className="createTitle">Add a Recipe!</h1>
                     <label className="createLabel createName">Name: </label><br/>
-                    <input className="createLabel"
+                    <input className="createLabel createEntry"
                     type="text"
                     value={Form.name}
                     name="name"
@@ -60,7 +60,7 @@ const Create = (props) =>{
 
                     <label className="createLabel createName">Ingredients: </label><br/>
                     <textarea 
-                    className="createLabel"
+                    className="createLabel createEntry"
                     type="text"
                     value={Form.ingredients}
                     name="ingredients"
@@ -80,7 +80,7 @@ const Create = (props) =>{
                     />*/}
 
                     <label className="createLabel createName">Category: </label><br/>
-                    <input className="createLabel"
+                    <input className="createLabel createEntry"
                     type="text"
                     value={Form.category}
                     name="category"
@@ -92,7 +92,7 @@ const Create = (props) =>{
 
                     <label className="createLabel createName">Description: </label><br/>
                     <textarea
-                    className="createLabel"
+                    className="createLabel createEntry"
                     type="text"
                     value={Form.description}
                     name="description"
@@ -113,7 +113,7 @@ const Create = (props) =>{
                     
                     {/* <div className="column"> */}
                     <label className="createLabel createName">Rating: </label><br/>
-                    <input className="createLabel"
+                    <input className="createLabel createEntry"
                     type="number"
                     value={Form.rating}
                     name="rating"
@@ -124,7 +124,7 @@ const Create = (props) =>{
                     /><br/>
 
                     <label className="createLabel createName">Difficulty: </label><br/>
-                    <select className="createLabel"
+                    <select className="createLabel createEntry"
                     value={Form.tags}
                     name="tags"
                     onChange={handleChange}
@@ -138,7 +138,7 @@ const Create = (props) =>{
 
                     <label className="createLabel createName">Directions: </label><br/>
                     <textarea 
-                    className="createLabel"
+                    className="createLabel createEntry"
                     type="text"
                     value={Form.directions}
                     name="directions"
@@ -160,7 +160,7 @@ const Create = (props) =>{
                     <br/>
 
                     <label className="createLabel createName">Servings: </label><br/>
-                    <input className="createLabel"
+                    <input className="createLabel createEntry"
                     type="number"
                     value={Form.servings}
                     name="servings"
@@ -171,7 +171,7 @@ const Create = (props) =>{
                     /><br/>
 
                     <label className="createLabel createName">Image: </label><br/>
-                    <input className="createLabel"
+                    <input className="createLabel createEntry"
                     type="text"
                     value={Form.img}
                     name="img"
