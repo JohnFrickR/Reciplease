@@ -9,9 +9,9 @@ const Footer = (props) => {
                 <div className="footerTitle">
                     <h5>@Reciplease</h5>
                 </div>
-                <div className="note">
-                            <a className="note">You can reach me on linkedin!</a>
-                        </div>
+                {/* <div className="note">
+                            <p>You can reach me on linkedin!</p>
+                        </div> */}
                 <nav className="navBar">
                     <Link to='https://www.linkedin.com/in/john-r-frick/'>
                         <div>

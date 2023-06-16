@@ -31,22 +31,28 @@ const Show = (props) => {
                     <img className="recipeImg" src={`${recipe.img}`} alt={`${recipe.name}`} />
                 </div>
 
-                <div className="recipeDetails">
-                    
-                    <div className="recipeDirections">
-                    <article>{recipe.directions}</article>
+                <div className="recipeDetailsDiv">
+
+                    <div className="recipeDirections element element1">
+                        <h3>Ingredients:</h3>
+                    <p>{recipe.ingredients}</p>
+                        <h3>Instructions:</h3>
+                    <p>{recipe.directions}</p>
                     </div>
 
-                    <section>
-                        <article>
+                        <div className="element">
+                            <h3>Category:</h3>
                             <p>{recipe.category}</p>
-                            <p>{recipe.ingredients}</p>
+                            <h3>Description:</h3>
                             <p>{recipe.description}</p>
+                            <h3>rating:</h3>
                             <p>{recipe.rating}</p>
+                            <h3>Difficulty:</h3>
                             <p>{recipe.tags}</p>
+                            <h3>Servings:</h3>
                             <p>{recipe.servings}</p>
-                        </article>
-                    </section>
+                        </div>
+                    
                 </div>
 
                 

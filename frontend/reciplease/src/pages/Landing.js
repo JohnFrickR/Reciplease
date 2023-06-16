@@ -15,7 +15,7 @@ const Landing = (props) =>{
             <div className='landing_slogan'>
                 <h3 className='slogan'>No blogs, no backstory, just recipes!</h3>
             </div>
-            
+
             <div className='landingNoteDiv'>
                 <article className='landingNote'>
                     <p className='note2'>
@@ -23,10 +23,21 @@ const Landing = (props) =>{
                     </p>
                 </article>
             </div>
+            <div className='myInfoDiv'>
+
             <div className='myImgDiv'>
                 <h2 className="myName">John Frick</h2>
                <img className='myImg' src="https://media.licdn.com/dms/image/D4E03AQGayj2rKfoJ3g/profile-displayphoto-shrink_800_800/0/1664406791039?e=1692230400&v=beta&t=TjnnAV0YN6VW6xUs6olwqwr_9glehxDtcsNh3XWN41s" alt='John Frick'/>
-            </div >
+             </div >
+
+               <div className='contactInfo'>
+                    {/* <a>johnfrickr@gmail.com</a><br/> */}
+                    <a className='contact_a' href='https://www.linkedin.com/feed/'>Linkedin</a><br/>
+                    <a className='contact_b' href='https://github.com/JohnFrickR'>Github</a>
+               </div>
+            
+            </div>
+
         </div>
     );
 };

@@ -53,8 +53,9 @@ a{
   color: rgb(29, 29, 29);
   font-family: "Macondo";
 }
-a:hover{
-  color: whitesmoke;
+a:hover:not(.navBar){
+  color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 /* Footer Styling */
@@ -103,9 +104,10 @@ a:hover{
   color: black; 
 }
 .indexLink{
+  font-size: 15px;
   background-color: #4b5053;
   color: #FFFFFF;
-  width: 100px;
+  width: 150px;
   height: 30px;
 }
 .indexLink:hover {
@@ -136,7 +138,7 @@ a:hover{
 /* Show Page details */
 .showContainer{
   font-family: "Macondo";
-  margin: 200px;
+  margin: 300px;
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex; 
@@ -146,8 +148,21 @@ a:hover{
   background-color: beige;
   border: 3px solid black;
 }
+.element{
+  float: left;
+  background-color: white;
+  border: solid 2px black;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+}
+.recipeImgDiv{
+}
 .recipeImg{
-  max-width: 50%;
+  max-width: 400px;
+  max-height: 300px;
+  width: 400px;
+  height: 300px;
   border-radius: 30%;
 }
 .recipeName{
@@ -155,18 +170,18 @@ font-size: 50px;
 color:rgba(203, 165, 108, 0.844);
 text-shadow: 2px 2px 2px black;
 }
-.recipeDetails{
- font-size: 35px;
- 
+.recipeDetailsDiv{
+ /* font-size: 35px; */
+  display: inline-block;
 }
 .showButtons{
   font-size: 30px;
   width: 400px;
-  background-color: black;
-  color: white;
+  background-color: #4b5053;
+  color: #FFFFFF;
 }
 .showButtons:hover{
-  background-color: white;
+  background-color: blanchedalmond;
   color: black;
 }
 /* Landing Page Styling */
@@ -220,12 +235,18 @@ text-shadow: 2px 2px 2px black;
 .myName{
   font-size: 30px;
 }
+.contact_a{
+  font-size: 25px;
+}
+.contact_b{
+  font-size: 25px;
+}
 
 /* Edit Form */
 
 .columnEdit{
   font-family: "Macondo";
-  margin: 200px;
+  margin: 500px;
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex; 
@@ -233,6 +254,7 @@ text-shadow: 2px 2px 2px black;
   text-align: center;
   background-color: beige;
   border: 3px solid black;
+  max-width: 50%;
 }
 /* .editForm{
   font-family: "Macondo";
@@ -265,11 +287,11 @@ text-shadow: 2px 2px 2px black;
 .editBtn{
   font-size: 30px;
   width: 400px;
-  background-color: black;
-  color: white;
+  background-color: #4b5053;
+  color: #FFFFFF;
 }
 .editBtn:hover{
-  background-color: white;
+  background-color: blanchedalmond;
   color: black;
 }
 
@@ -287,7 +309,7 @@ text-shadow: 2px 2px 2px black;
 
 .column{
   font-family: "Macondo";
-  margin: 200px;
+  margin: 500px;
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex; 
@@ -295,6 +317,7 @@ text-shadow: 2px 2px 2px black;
   text-align: center;
   background-color: beige;
   border: 3px solid black;
+  max-width: 50%;
 }
 
 .createLabel{
@@ -322,11 +345,11 @@ text-shadow: 2px 2px 2px black;
 .createBtn{
   font-size: 30px;
   width: 400px;
-  background-color: black;
-  color: white;
+  background-color: #4b5053;
+  color: #FFFFFF;
 }
 
 .createBtn:hover{
-  background-color: white;
+  background-color: blanchedalmond;
   color: black;
 }
