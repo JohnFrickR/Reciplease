@@ -23,7 +23,6 @@
   /* background-color: rgb(89, 100, 97); */
   opacity: 0.8;
   font-size: 25px;
-
 }
 .navText{
   color: rgba(203, 165, 108, 0.844);
@@ -149,14 +148,12 @@ a:hover:not(.navBar){
   border: 3px solid black;
 }
 .element{
-  float: left;
+  /* float: left; */
   background-color: white;
-  border: solid 2px black;
-  width: 400px;
-  height: 400px;
+  border: solid 2px black; 
+  width: 1000px;
+  /* height: 400px; */
   margin: 10px;
-}
-.recipeImgDiv{
 }
 .recipeImg{
   max-width: 400px;

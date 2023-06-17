@@ -8,12 +8,8 @@ const Edit = (props) => {
     const id = params.id
 
     const recipes = props.recipes
-    console.log(recipes)
 
     const recipe = recipes.find((r) => r._id === id);
-
-    console.log(id)
-    console.log(recipe)
 
     // we will need to set state here for our form
     const [editForm, setEditForm]= useState(recipe)

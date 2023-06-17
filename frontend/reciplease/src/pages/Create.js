@@ -16,13 +16,12 @@ const Create = (props) =>{
         servings: "",
         img: ""
     })
-
-    // handleChange function for form
+// this will store changes as we make them
   const handleChange = (event) => {
     setForm({ ...Form, [event.target.name]: event.target.value });
   };
 
-  // handle submit function for form
+  //  this will submit the data when we.. submit it 
   const handleSubmit = (event) => {
     event.preventDefault();
     props.createRecipe(Form);
@@ -37,6 +36,7 @@ const Create = (props) =>{
         servings: "",
         img: ""
     });
+    // takes us back to the index page to see the newly created recipe
     navigate("/reciplease");
   };
 
