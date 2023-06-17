@@ -7,7 +7,7 @@ const Footer = (props) => {
         <div className="footer">
             <div className="footerFlex">
                 <div className="footerTitle">
-                    <h5>@Reciplease</h5>
+                    <h5>Reciplease</h5>
                 </div>
                 {/* <div className="note">
                             <p>You can reach me on linkedin!</p>

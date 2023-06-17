@@ -154,6 +154,11 @@ a:hover:not(.navBar){
   width: 1000px;
   /* height: 400px; */
   margin: 10px;
+  font-size: 20px;
+  border-radius: 10%;
+}
+.elementTitle{
+  font-size: 30px;
 }
 .recipeImg{
   max-width: 400px;

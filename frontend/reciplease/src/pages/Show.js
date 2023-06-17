@@ -34,22 +34,22 @@ const Show = (props) => {
                 <div className="recipeDetailsDiv">
 
                     <div className="recipeDirections element element1">
-                        <h3>Ingredients:</h3>
+                        <h3 className="elementTitle">Ingredients:</h3>
                     <p>{recipe.ingredients}</p>
-                        <h3>Instructions:</h3>
+                        <h3 className="elementTitle">Instructions:</h3>
                     <p>{recipe.directions}</p>
                     </div>
 
                         <div className="element">
-                            <h3>Category:</h3>
+                            <h3 className="elementTitle">Category:</h3>
                             <p>{recipe.category}</p>
-                            <h3>Description:</h3>
+                            <h3 className="elementTitle">Description:</h3>
                             <p>{recipe.description}</p>
-                            <h3>rating:</h3>
+                            <h3 className="elementTitle">rating:</h3>
                             <p>{recipe.rating}</p>
-                            <h3>Difficulty:</h3>
+                            <h3 className="elementTitle">Difficulty:</h3>
                             <p>{recipe.tags}</p>
-                            <h3>Servings:</h3>
+                            <h3 className="elementTitle">Servings:</h3>
                             <p>{recipe.servings}</p>
                         </div>
                     
