@@ -27,4 +27,4 @@
 > As a user I want to be able find the recipe of a dish I'm looking for easily.
 > As a user I want to be able to create, edit, and delete my own recipes easily,
 ### MVP Goals
-I wanted full CRUD functionality and for the CSS to look professional. 
+I wanted full CRUD functionality, for the CSS to look professional, and for the frontend and backend to work with no issues.
